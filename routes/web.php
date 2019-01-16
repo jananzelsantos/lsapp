@@ -39,3 +39,5 @@ Route::get('/home', 'HomeController@index')->name('home');
  Route::resource('posts', 'PostsController');
 
  Route::resource('venues', 'VenuesController');
+
+ Route::resource('classroom', 'ClassroomsController');
