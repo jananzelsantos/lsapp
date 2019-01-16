@@ -13,7 +13,7 @@ class Venue extends Model
     // Primary Key
     public $primaryKey = 'id';
     // Timestamps
-    public $timestamps = true;
+    public $timestamps = false;
 
     protected $fillable = ['name', 'description', 'place'];
 
