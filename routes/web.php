@@ -22,22 +22,26 @@
       return 'This is user '.$name. 'with an id of '.$id;
   });*/
 
+// Thesis Proper
+
+ Route::resource('venues', 'VenuesController');
+
+ Route::resource('classrooms', 'ClassroomsController');
+
+ Auth::routes();
+
+ //Traversy Media example
+ Route::resource('posts', 'PostsController');
+
  Route::get('/', 'PagesController@index');
 
-Route::get('/about', 'PagesController@about');
+ Route::get('/about', 'PagesController@about');
 
  Route::get('/services', 'PagesController@services');
 
  Route::resource('posts', 'PostsController');
 
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
+ Route::get('/home', 'HomeController@index')->name('home');
 
 
- Route::resource('posts', 'PostsController');
 
- Route::resource('venues', 'VenuesController');
-
- Route::resource('classroom', 'ClassroomsController');
